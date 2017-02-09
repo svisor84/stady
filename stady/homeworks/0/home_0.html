@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>homework_0</title>
 </head>
+<body>
 <style type="text/css">
     @font-face{
-      font-family: FontAwesome;
+        font-family: FontAwesome;
         src: url('./fonts/FontAwesome/FontAwesome.otf');
         src: url('./fonts/FontAwesome/fontawesome-webfont.ttf');
         font-weight: normal;
@@ -24,8 +25,9 @@
         src: url('./fonts/FiraSans/FiraSans-Regular.ttf');
     }
     body{
-        width: 1280px;
+        width: 1024px;
         margin: 0 auto;
+        font-family: FiraSans;
     }
     div.header{
         width: 100%;
@@ -36,7 +38,6 @@
     .my_foto{
         width: 60px;
         float: left;
-        margin-right: 10px;
         border-radius: 50%;
         margin: .9vw 1.2vw;
         border-color: #fff;
@@ -51,30 +52,97 @@
     .my_cont p{
         color: #fff;
     }
+    a{
+        color: #fff;
+    }
     .socials{
         float:right;
         margin: 1.5vw;
         opacity: 0.6;
     }
     .my_name{
-        font-family: FiraSans;
         font-style: normal;
         font-size: 20px;
-        margin-bottom: -7px;
+        margin-bottom: 6px;
     }
     .email{
-        font-family: FiraSans;
         font-style: normal;
         font-size: 14px;
         opacity: 0.5;
+        text-decoration: none;
+    }
+    .workflow{
+        margin-top: 4vw;
+    }
+    h1{
+        margin: auto;
+        width:351px;
+        font-family: FiraSans;
+        font-size: 37px;
+        opacity: 0.8;
+    }
+    .about_student{
+        width: 1000px;
+        margin: auto;
+    }
+    .regular_text{
+        color:darkgrey;
+        font-size:12px;
+    }
+    .about_student{
+        margin: auto;
+        width:900px;
+    }
+    .my_self{
+        float:left;
+        width: 450px;
+        margin: 0;
+    }
+    .my_self img{
+        float:left;
+        margin-top:25px;
+    }
+    .my_self p.regular_text{
+        float: left;
+        width: 260px;
+        margin-left: 23px;
+        line-height: 18px;
+    }
+    .text_head{
+        font-size: 19px;
+        opacity: .8;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .my_self p.text_head{
+        text-align: left;
+        color:#000;
+        opacity: 0.8;
+        margin-bottom: 0px;
+    }
+    .about_me p.text_head{
+        margin-top:25px
+    }
+    .about_me{
+        width: 900px;
+        height: 200px;
+    }
+    .courses{
+        background-image: url('./gplaypattern.png');
+        padding: 55px;
+    }
+    .course{
+        float:left;
+    }
+    .course img{
+        width: 240px;
     }
 </style>
-<body>
 <div class="header">
     <img src="./images/i_am.jpeg" alt="" class="my_foto">
     <div class="my_cont">
         <p class="my_name">Мухин Станислав Андреевич</p>
-        <p class="email">stnslvmukhin@gmail.com</p>
+        <a href="mailto:stnslvmukhin@gmail.com" class="email">stnslvmukhin@gmail.com</a>
     </div>
     <div class="socials">
         <img src="./icons/git.svg" alt="">
@@ -84,57 +152,62 @@
 </div>
 <div class="workflow">
     <div class="about_student">
-        <h1></h1>
-        <p></p>
+        <h1>О будущем ученике</h1>
+        <p class="regular_text text_head">Ребятам из loftschool будет полезно узнать не много обо мне</p>
         <div class="about_me">
             <div class="my_self">
-                <div class="img_me"></div>
-                <p class="text head"></p>
-                <p class="regular_text"></p>
+                <img src="./icons/hello.svg" alt="" class="hello">
+                <p class="text_head regular_text">Не много обо мне</p>
+                <p class="regular_text"> Всем привет, я живу в городе Одинцово. Мне 32 года. В разработке 3 года.
+                    Занимаю техподдержкой и разработкой.</p>
             </div>
             <div class="my_self">
-                <div class="img_me"></div>
-                <p class="text head"></p>
-                <p class="regular_text"></p>
+                <img src="./icons/experience.svg" alt="" class="hello">
+                <p class="text_head regular_text">Мой опыт в разработке</p>
+                <p class="regular_text">Начинал с разработки на php под Битрикс(и продолжаю этим заниматься). В прошлом
+                    году закончил курсы в LoftSchool по JavaScript. Добавил в свой портфель знания в разработке на js.
+                    Разрабатываю крупный SPA проект с командой подрядчика.
+                </p>
+
             </div>
         </div>
     </div>
     <div class="courses">
-        <p class="head_h1"></p>
-        <p></p>
+        <h1>Курсы на Loftblog</h1>
+        <p class="regular_text text_head">которые мне помогут в выполнении этого задания</p>
         <div class="courses">
-            <div class="course_1">
-                <div class="img_course"></div>
+            <div class="course">
+                <img src="./images/js.jpg" alt="" class="course">
                 <p class="text_head"></p>
                 <p class="regular_text"></p>
                 <div class="input"><input type="checkbox" value="посмотрел"></div>
             </div>
-            <div class="course_2">
-                <div class="img_course"></div>
+            <div class="course">
+                <img src="./images/jquery.jpg" alt="" class="course">
                 <p class="text_head"></p>
                 <p class="regular_text"></p>
                 <div class="input"><input type="checkbox" value="посмотрел"></div>
             </div>
-            <div class="course_3">
-                <div class="img_course"></div>
+            <div class="course">
+                <img src="./images/black.jpg" alt="" class="course">
                 <p class="text_head"></p>
                 <p class="regular_text"></p>
                 <div class="input"><input type="checkbox" value="посмотрел"></div>
             </div>
-            <div class="course_4">
-                <div class="img_course"></div>
+            <div class="course">
+                <img src="./images/blue.jpg" alt="" class="course">
                 <p class="text_head"></p>
                 <p class="regular_text"></p>
                 <div class="input"><input type="checkbox" value="посмотрел"></div>
             </div>
-            <div class="course_5">
-                <div class="img_course"></div>
+            <div class="course">
+                <img src="./images/button.jpg" alt="" class="course">
                 <p class="text_head"></p>
                 <p class="regular_text"></p>
                 <div class="input"><input type="checkbox" value="посмотрел"></div>
             </div>
-            <div class="course_6">
-                <div class="img_course"></div>
+            <div class="course">
+                <img src="./images/css.jpg" alt="" class="course">
                 <p class="text_head"></p>
                 <p class="regular_text"></p>
                 <div class="input"><input type="checkbox" value="посмотрел"></div>
